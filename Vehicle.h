@@ -5,6 +5,7 @@
 
 using namespace std;
 
+// This is the super class
 class Vehicle
 {
 public:
