@@ -10,13 +10,17 @@ using namespace std;
 
 int main()
 {
+	// Created the pointer object for the vehicle super class
 	Vehicle *vehicle = NULL;
+
+	// initialized other sub classes
 	Car car("Toyota car", "can drive on the road.");
 	Ship ship("Titanic ship", "sailes over the sea.");
 	Plane plane("Boin 757 plane", "flies through the air.");
 	Submarine submarine("Type VII submarine", "dives under the water.");
 	Rocket rocket("Saturn V", "shoots through the space.");
 
+	// polymorphism goes here
 	vehicle = &car;
 	vehicle->funcDescription();
 
