@@ -4,6 +4,7 @@
 #include "Plane.h"
 #include "Ship.h"
 #include "Submarine.h"
+#include "Rocket.h"
 
 using namespace std;
 
@@ -14,6 +15,7 @@ int main()
 	Ship ship("Titanic ship", "sailes over the sea.");
 	Plane plane("Boin 757 plane", "flies through the air.");
 	Submarine submarine("Type VII submarine", "dives under the water.");
+	Rocket rocket("Saturn V", "shoots through the space.");
 
 	vehicle = &car;
 	vehicle->funcDescription();
@@ -27,5 +29,8 @@ int main()
 	vehicle = &submarine;
 	vehicle->funcDescription();
 
+	vehicle = &rocket;
+	vehicle->funcDescription();
+	
 	return 0;
 }
